@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: acm.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Database file #1: referencias.bib
+Warning--empty journal in rodolenguaje
+You've used 6 entries,
+            2253 wiz_defined-function locations,
+            560 strings with 4709 characters,
+and the built_in function-call counts, 1604 in all, are:
+= -- 147
+> -- 72
+< -- 0
++ -- 30
+- -- 24
+* -- 109
+:= -- 278
+add.period$ -- 16
+call.type$ -- 6
+change.case$ -- 28
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 60
+empty$ -- 136
+format.name$ -- 24
+if$ -- 323
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 31
+num.names$ -- 12
+pop$ -- 40
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 34
+stack$ -- 0
+substring$ -- 77
+swap$ -- 11
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 20
+warning$ -- 1
+while$ -- 16
+width$ -- 7
+write$ -- 57
+(There was 1 warning)

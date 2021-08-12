@@ -1,0 +1,151 @@
+\documentclass[a4paper,openright,12pt]{report}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{cite} % para contraer referencias
+\title{Prueba de Python}
+\author{Cristhiam Daniel Campos Julca}
+
+\begin{document}
+	% cuerpo del documento
+	
+	\maketitle
+	
+	\begin{itemize}
+		\item Preguntas teóricas
+		
+		\begin{enumerate}
+			\item ¿Qué es Python? \\
+			
+			Es un lenguaje de alto nivel ya que contiene implícitas algunas estructuras de datos como listas, diccionarios, conjuntos y tuplas, que permiten realizar algunas tareas complejas en pocas líneas de código y de manera legible. \cite{challenger2014lenguaje}. \\
+			
+			Las principales características de Python son, es un lenguaje \textbf{interpretado}, es decir, no es necesario compilar el código para su ejecución, ya que existe un intérprete que se encarga de leer el fichero fuente y ejecutarlo. Además, es un lenguaje \textbf{multiplataforma}. \cite{montoro2012python}.\\
+						
+			\item ¿Por qué Python es mejor que Java? \\
+			
+			No se puede decir que un lenguaje es mejor que el otro, sino que depende de las necesidades del programador en ese momento. \\
+			
+			Aunque Java es algo complejo a comparación de Python en la estructura, proporciona una mejor comprensión de la gestión de la memoria y es más seguro. Por otro lado, Python es corto, simple y fácil. Un principiante puede entender fácilmente un programa de Python porque está escrito en un inglés simple. Además tiene una sintaxis más legible, por lo que la curva de aprendizaje será menor en comparación que con Java. \cite{khoirom2020comparative}.\\
+						
+			\item ¿Cuántos tipos de datos existen en el lenguaje Python? \\
+			
+			Los tipos de datos básicos son los \textit{booleanos}, los \textit{numéricos} y las \textit{cadenas de caracteres}. Dentro de los numéricos podemos clasificarlos en: \textit{enteros}, \textit{flotantes} y los \textit{complejos}. \\
+			
+			Además de los tipos básicos, otros tipos fundamentales de Python son las secuencias (list y tuple), los conjuntos (set) y los mapas (dict). Todos ellos son tipos compuestos y se utilizan para agrupar juntos varios valores.\\
+			
+			\begin{itemize}
+			\item Las listas son secuencias mutables de valores.
+			\item Las tuplas son secuencias inmutables de valores.
+			\item Los conjuntos se utilizan para representar conjuntos únicos de elementos, es decir, en un conjunto no pueden existir dos objetos iguales.
+			\item Los diccionarios son tipos especiales de contenedores en los que se puede acceder a sus elementos a partir de una clave única.
+			\end{itemize}
+			
+			\item ¿Cuál es la diferencia entre \textit{tuple} y \textit{lista}? \\
+			
+			En python, una tupla es una estructura de datos que representa una colección de objetos, pudiendo estos ser de distintos tipos. Para declarar una tupla se utilizan paréntesis, entre los cuales deben separarse por comas los elementos que van a formar parte de ella.\\
+			
+			Por otro lado, una lista es una colección ordenada de objetos, similar al \textit{array dinámico} empleado en otros lenguajes de programación. Para definir una lisa se utilizan corchetes entre los cuales aparecen diferentes valores separados por comas.\\
+			
+			A diferencia de las tuplas, los elementos de las listas pueden ser reemplazados accediendo directamente a través del índice que ocupan en la lista \cite{montoro2012python}.\\
+			
+			
+			\item ¿Qué es PEP8? \\
+			
+			PEP, Python Enhancement Proposal (Propuesta de Mejora de Python), es un conjunto de normas de estilo para estandarizar la escritura en este lenguaje, cuyo objetivo es ayudar a escribir un código más legible y abarcar desde cómo nombrar variables, al número máximo de caracteres que una línea debe tener.\\
+			
+			
+			``Code is read much more often than it is written''., Guido van Rossum.\\
+			
+			\item ¿Qué es ``pickling'' y ``unpickling''? \\
+			
+			Con los algoritmos del módulo de \textit{pickle} podemos serializar y de-serializar estructuras de objetos de Python. ``Pickling'' se refiere al proceso de convertir una jerarquía de objetos de Python en un flujo de bytes, y  ``unpickling'' por otro lado es la operación inversa, es decir, el flujo de bytes se convierte de nuevo en una jerarquía de objetos.\\
+			
+			
+			\item ¿Qué es  ``lambda''? \\
+			
+			Son funciones anónimas definidas en línea, que no serán referenciadas posteriormente. Se construyen mediante el operador \textbf{lambda}, sin usar el paréntesis para indicar los argumentos. Estos van directamente después del nombre de la función, que finaliza su declaración con dos puntos (:). Justo después, en la misma línea se escribe el código de la función \cite{rodolenguaje}.\\
+			
+			\item ¿Cómo se administra la memoria dentro del lenguaje Python? \\
+			
+			El administrador de memoria es el responsable del proceso de asignar, desasignar y coordinar la memoria de manera eficiente para los diferentes procesos que se ejecuten en Python. El administrador de memoria realiza un seguimiento del número de referencias a cada objeto en el programa; cuando el recuento de referencias de objeto cae a cero, el recolector de basura automáticamente libera la memoria de ese objeto en particular.\\
+			
+			
+			\item ¿Qué es ``pass''? \\
+			
+			Es una declaración que provoca que no se produzca ninguna operación, es decir, no pasará nada cuando se ejecute. A diferencia de los comentarios, éstos últimos son ignorados y no se ejecutan; en cambio, la sentencia pass se ejecutará sin que resulta nada.\\
+			
+			\item ¿Puedes copiar un objeto en el lenguaje Python?\\
+			
+			La operación de copiar objetos en Python varía según el tipo de objeto, teniendo en cuenta que las declaraciones de asignación siempre establecen un valor de referencia para un objeto, en lugar de copiar el objeto. \\
+			
+			El módulo estándar copy permite crear copias de distintos objetos de Python, generalmente colecciones mutables (como las listas y los diccionarios) e instancias de clases, también mutables.\\
+			
+			\item ¿Cómo borrar un archivo dentro de Python?\\
+			
+			Para eliminar un archivo, se debe importar el módulo OS y ejecutar la función os.remove(). Se debe tener en cuenta, para evitar errores, la comprobación de la existencia del archivo antes de tratar eliminarlo.\\
+			
+			
+			\item ¿Qué es un ``diccionario''?\\
+			
+			Un Diccionario es una estructura de datos y un tipo de dato en Python con características especiales que nos permite almacenar cualquier tipo de valor como enteros, cadenas, listas e incluso otras funciones. Estos diccionarios nos permiten además identificar cada elemento por una clave (Key).\\
+			
+			\item ¿Es Python un lenguaje de programación interpretado?\\
+			
+			Sí. Un lenguaje interpretado es aquél que se puede ejecutar sin necesidad de ser compilado. Para ello, en lugar de un compilador, tenemos lo que se llama un \textit{intérprete}, que lee el código y ejecuta las instrucciones en él contenidas. Al no haber compilación no existe un binario, y los programas escritos en lenguajes interpretados se suelen llamar \textit{scripts}.\\
+			
+			Como ventajas tiene el que son portables entre plataformas (siempre que dispongan del intérprete adecuado) y que no necesitan ser compilados cada vez que se modifican. \cite{gutierrez2016python}.\\
+			
+			
+			\item ¿Cuál de ellos es un error?\\
+			
+			Hay dos tipos de errores: errores de sintaxis y excepciones. Los primeros son conocidos como errores de interpretación; mientras que las excepciones son los errores detectados durante la ejecución, y no son incodicionalmente fatales.\\
+			
+			\item ¿Cómo Python se considera un lenguaje orientado a objetos?\\
+			
+			Según la definición, la programación orientada a objetos es un paradigma de programación en el que los programas se ven como formados por entidades llamadas objetos que recuerdan su propio estado interno y que se comunican entre sí mediante el paso de mensajes que se intercambian con la finalidad de:\\
+			
+			
+				\begin{itemize} 
+						\item cambiar sus estados internos,
+						\item compartir información y
+						\item solicitar a otros objetos el procesamiento de dicha información.
+				\end{itemize} 
+			
+			El sistema de objetos de Python proporciona una sintaxis cómoda para promover el uso de estas técnicas de organización de programas \cite{lopez2006programacion}.\\
+			
+			
+			\item ¿Qué es ``slicing''?\\
+			
+			El slicing es la operación por el cuál se extraen elementos de una secuencia, talcomo una lista o una cadena de caracteres. Dependiendo del caso, los elementos podrían ser consecutivos o podrían estar separados dentro de la secuencia original.\\
+			
+			\item  Según la guía de estilos PEP8 ¿como deben escribirse las constantes? \\
+			
+			Las constantes deben escribirse en mayúscula y usar la raya al piso para evitar espacios entre palabras.\\
+			
+			\item ¿Qué es virtualenv y como lo inicias con un interpretador de Python especifico?\\
+			
+			Virtualenv es una herramienta que nos permite tener entornos Python totalmente separados y aislados, de manera que el intérprete y las librerías de proyectos diferentes no entren en conflicto.\\
+			
+			Virtualenv guarda cada entorno virtual en un directorio con el nombre de ese entorno. Dentro de ese directorio se guardarán todos los archivos necesarios (de ellos nos interesan, en particular, los módulos que instalemos en el entorno y el script que lo inicia).\\
+			
+			
+		\end{enumerate} 
+	
+		\item Ejercicio práctico\\
+		
+		
+		En el correo, se adjunta un archivo JSON con tweets.
+		Debes leer el archivo en Python y obtener las siguientes métricas\\
+		
+			\begin{enumerate} 
+				\item Numero de tweets
+				\item Lista de los usuarios autores de los tweets (tip: el nombre de usuario está en user $>$ screen\_name)
+				\item Totalizador del numero de seguidores de todos los usuarios (tip: los seguidores están en user $>$ followers\_count)
+				\item Obtén una lista de todos los usuarios mencionados en todos los tweets
+				\item Obtén el total de tweets con tendencia 0, 1 y 2 respectivamente
+			\end{enumerate} 
+	\end{itemize} 
+	
+\bibliographystyle{acm}
+\bibliography{referencias}
+\end{document}
